@@ -169,6 +169,14 @@
               </literalString>
             </defaultValue>
           </property>
+          <property Id="ea52ccb9-c23a-493f-925e-acb420f78b5d" name="List&lt;Genre&gt; GenreList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aef11fd0-ae90-4172-a12a-02e7ae26b66a" />
+            <defaultValue>
+              <literalString Id="37828c30-a424-49a5-86df-5e67c7590330" name="DefaultValue" value="new List&lt;Genre&gt;();">
+                <elementDefinition Id="dad89782-217b-453a-8b81-788cdc220847" />
+              </literalString>
+            </defaultValue>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="16ae039b-0d41-462d-a456-fae9701c59fe" name="public static Genre operator +" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -210,6 +218,35 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="12a0f9ec-d317-431f-9240-90f20e7eaf3a" name="IEnumerator IEnumerable.GetEnumerator" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="80638ab1-649a-4f9c-a7e7-68ff6380bb49" />
+          </operation>
+          <operation Id="1110a84f-051a-40dd-8124-5f4ba17a1a26" name="public IEnumerator&lt;string&gt; GetEnumerator" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="034d7ce3-370d-4c27-b225-82b26db73caa" />
+          </operation>
+          <operation Id="55ce55b4-63c1-4007-b9f9-fbfba171057c" name="public void PrintTitles" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a8ac2b95-65dc-4782-bd3a-a9518333ca22" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="779a3b6b-d8b6-4aa2-aa24-5bc770766629" name="VIewGenresAndTitles" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="983c0479-ba85-4ccb-9d02-e988dfd79db8" />
+        <ownedAttributesInternal>
+          <property Id="d422f56c-8491-4e3f-a9d6-d867c555c8cc" name="Genre genre" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="80f727c1-a160-4c8b-bb61-c6ce1c4fc1b7" />
+            <defaultValue>
+              <literalString Id="e0c04c9a-1569-4a44-8214-7ef5db93e5e1" name="DefaultValue" value="new Genre();">
+                <elementDefinition Id="d5bb3bfe-478d-4487-8d87-ed908f88d94a" />
+              </literalString>
+            </defaultValue>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bc5ba233-a9f1-49b2-9335-9a4a53a60901" name="genre.PrintTitles();" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d862cefb-af0c-464a-b68f-34d5260242a6" />
           </operation>
         </ownedOperationsInternal>
       </class>

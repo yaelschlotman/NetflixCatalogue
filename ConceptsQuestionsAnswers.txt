@@ -8,19 +8,27 @@ static/non-static
 	Define non-static:   What is an example?
 			-May be instantiated.
 			-Example:  Any class instantiaed in another class or in program main.
-*nullable types, null operators
+nullable types, null operators
 	What is a nullable type?  
 			-Data type to which can be assigned a normal range of values, as well as null values.
-	*Define the different null operators.
-
-*generics
-	*What are generics?  
-	*How would this be useful?
-*attributes
-	*What is an atribute?
-	*What is an example of an attribute?
-*custom iterators
-	*Come up with an example where it makes sense to use a custom iterator.		
+	Define the different null operators.
+			-?? is null coelescing.  Returns left-hand operand if operand is not null.
+			Otherwise returns right-hand operand.
+			-?. is null conditional.  Tests for null before performing member access.
+			-?: is null ternary.  Simplifies if-else statements into a single, three-part line.*generics
+What are generics?
+	-allow delay in defining certain data types in a class or method.
+	-lets you decide the data type later, when the class or method is used.
+	How would this be useful?
+	-when you want to write up the class or method, but leave the data types undefined.
+attributes
+	What is an atribute?
+			-method of associating declarative information (types, methods, properties, etc.)
+			-once associated with a program entity, attributes can be queried at run time 
+			and used in any number of ways.
+	What is an example of an attribute? 
+custom iterators
+	Come up with an example where it makes sense to use a custom iterator.		
 			-When you want to use the foreach method, you must use implement 
 			IEnumerable interface.
 			-replaces nee to manuyally create an enumerator.
@@ -29,8 +37,9 @@ static/non-static
 			-much simpler syntax.
 
 	(Hint:  IEnumerable)
-*overriding
-	*Define overriding
+overriding
+	Define overriding
+			-modifies the implementation of an inherited method, property, indexer, or event.
 overloading (operator, function)
 	Define:  
 			-adding two or more methods with the same name to a class.
@@ -42,8 +51,12 @@ overloading (operator, function)
 			-enables operators w/ user-defined types.
 			-methods w/ special keyword "operator" followed by symbol foroperator being defined.
 			-like other methods, has return type and parameters.
-*access modifiers
-	*What is the difference between public, private, and protected?
+access modifiers
+	What is the difference between public, private, and protected?
+			-public:  access is not restricted.
+			-private:  access is limited to containing class or types derived from containing class. 
+			-protected:  access is limited to containing type.
+
 properties, fields
 	Properties:  
 			-named members of classes, structures or interfaces.

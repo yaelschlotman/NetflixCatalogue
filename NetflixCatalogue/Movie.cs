@@ -8,11 +8,7 @@ namespace NetflixCatalogue
 {
     public class Movie : Title
     {
-        /* field
-            Overrides ToString() method to 
-            return a string of the name and duration 
-            of the movie.*/
-        
+        Genre genre = new Genre();
 
         public int Duration;  
         public Movie(string n, int r, int d)
@@ -21,13 +17,11 @@ namespace NetflixCatalogue
             Rating = r;
             Duration = d;
         }
-      
-       
-
         public override string ToString()
         {
             return Name + ", " + Duration + " minutes.";
         }
 
+  
     }
 }

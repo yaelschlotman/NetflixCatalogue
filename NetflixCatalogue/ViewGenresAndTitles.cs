@@ -8,10 +8,14 @@ namespace NetflixCatalogue
 {
     class ViewGenresAndTitles 
     {
-        List<string> Genres; 
+        Genre genre = new Genre();
+        
         public ViewGenresAndTitles()
         {
+            genre.PrintTitles();
 
         }
+
+        
     }
 }

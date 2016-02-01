@@ -331,6 +331,24 @@
                 value="new List&lt;Title&gt;();" />
             </defaultValue>
           </property>
+          <property
+            Id="aef11fd0-ae90-4172-a12a-02e7ae26b66a"
+            name="List&lt;Genre&gt; GenreList"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <defaultValue>
+              <literalString
+                Id="dad89782-217b-453a-8b81-788cdc220847"
+                name="DefaultValue"
+                value="new List&lt;Genre&gt;();" />
+            </defaultValue>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -401,6 +419,69 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="80638ab1-649a-4f9c-a7e7-68ff6380bb49"
+            name="IEnumerator IEnumerable.GetEnumerator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="034d7ce3-370d-4c27-b225-82b26db73caa"
+            name="public IEnumerator&lt;string&gt; GetEnumerator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a8ac2b95-65dc-4782-bd3a-a9518333ca22"
+            name="public void PrintTitles"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="983c0479-ba85-4ccb-9d02-e988dfd79db8"
+        name="VIewGenresAndTitles"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="80f727c1-a160-4c8b-bb61-c6ce1c4fc1b7"
+            name="Genre genre"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <defaultValue>
+              <literalString
+                Id="d5bb3bfe-478d-4487-8d87-ed908f88d94a"
+                name="DefaultValue"
+                value="new Genre();" />
+            </defaultValue>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d862cefb-af0c-464a-b68f-34d5260242a6"
+            name="genre.PrintTitles();"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
