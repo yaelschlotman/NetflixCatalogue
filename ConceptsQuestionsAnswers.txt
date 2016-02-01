@@ -1,4 +1,5 @@
-Netflix Catalog : Public humiliation prevention
+Netflix Catalog Concepts Qs & As: 
+"Public humiliation by disco dancing" prevention
 
 *static/non-static
 	Define static:  
@@ -8,7 +9,7 @@ Netflix Catalog : Public humiliation prevention
 	*Define non-static:   What is an example?
 *nullable types, null operators
 	What is a nullable type?  
-		Data type for to which can be assigned a normal range of values, 
+		Data type to which can be assigned a normal range of values, 
 		as well as null values.
 	*Define the different null operators.
 *generics

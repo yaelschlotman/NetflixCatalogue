@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLNetflixCatalogue">
+  <logicalClassDesignerModelMoniker Id="431f1405-4d29-436f-b44e-b636895ea6d0" />
+  <nestedChildShapes>
+    <classShape Id="158e1667-2204-474a-86c3-a5e0dde2b0e9" absoluteBounds="5.625, 2.125, 1.5, 2.0234374503294621" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="579ea42b-c868-4fc3-9bbf-d50767cd8f0f" LastKnownName="Title" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="a5cd461b-1be4-465a-ab2a-d026019d777e" absoluteBounds="5.64, 2.515, 1.4700000000000002, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="fbcb41f1-2669-4d5b-a99a-f8f323cc2cc6" absoluteBounds="5.64, 3.3667968476812042, 1.4700000000000002, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f88f1e27-5c31-483d-943e-b2d66cbfb7a0" absoluteBounds="7.5, 2.875, 1.5, 1.5429687152306233" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="402d66ce-d894-4168-a47b-7f6bd54a9173" LastKnownName="Movie" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="65a1899c-4f7d-4a46-b0cb-136c92443644" absoluteBounds="7.5150000000000006, 3.265, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="62da75cb-f64e-4f1d-83a3-b64d004c08fc" absoluteBounds="7.515, 3.6363281125823654, 1.4700000000000002, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(7.5 : 3.51171872516473); (7.125 : 3.51171872516473)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="ed61acf4-f043-4d4c-8388-10af72832d46" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="f88f1e27-5c31-483d-943e-b2d66cbfb7a0" />
+        <classShapeMoniker Id="158e1667-2204-474a-86c3-a5e0dde2b0e9" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="53555b9a-1d77-4438-aa00-77137d987739" absoluteBounds="3.75, 2.875, 1.5, 1.2226562251647311" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="7910c840-c10f-48a6-8903-4c7d79774370" LastKnownName="TVShow" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="8037d7e3-6ca1-48f0-8d15-10cfd995c786" absoluteBounds="3.7650000000000006, 3.2649999999999997, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="402cd8ff-9fa1-4885-8e13-6096fac93138" absoluteBounds="3.765, 3.6363281125823654, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(5.25 : 3.48632811258237); (5.625 : 3.48632811258237)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="dfbf8c23-fda7-499b-b7e2-d51277267a1d" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="53555b9a-1d77-4438-aa00-77137d987739" />
+        <classShapeMoniker Id="158e1667-2204-474a-86c3-a5e0dde2b0e9" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

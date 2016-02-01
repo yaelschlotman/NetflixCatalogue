@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="431f1405-4d29-436f-b44e-b636895ea6d0" name="UMLNetflixCatalogue" linkedPackageId="0e0a450c-5d86-47e8-bbd9-03220b62ec40" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="dd0d5b2a-a558-4ef2-85ee-b46660922f1e">
+      <profileInstance Id="1e1504ea-97ee-4ada-8ab3-5d2c6bd1e9ac" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c395cbc2-f7e3-4cad-a475-1b8752f52e7e">
+      <profileInstance Id="8b18b118-fb95-4944-957d-521545436cc7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="579ea42b-c868-4fc3-9bbf-d50767cd8f0f" name="Title" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="22485416-3e99-4289-915c-8918b94a486a" />
+        <ownedAttributesInternal>
+          <property Id="77faf2fd-fb76-4b86-abf4-6bcd7104f967" name="private string name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f16ef9a-5314-49bb-ab5f-847510db4355" />
+          </property>
+          <property Id="0e0daa0f-2e65-49b5-ac76-65c51cf69c8f" name="private int? rating" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="05e4f574-4d41-41b0-b97b-f104e2347cf3" />
+          </property>
+          <property Id="d0e9c6f0-819c-4a17-8de6-2d8981664a81" name="public string Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f45103b3-b7b7-4307-83da-53edc8c18e73" />
+          </property>
+          <property Id="8a26a291-562a-4280-9bf7-8820f38c1330" name="public int Rating" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66502e97-10a2-480c-ad62-b2181fe6145c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6a38da7a-66f9-438c-a130-37ba91efc764" name="public Title" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3dca0e26-7f2e-46c1-8d50-51797db0cee0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c77d1e73-af52-4b52-b9b9-eda1eeaf0384" name="string Name" direction="In" isUnique="false">
+                  <elementDefinition Id="9e470abd-b563-4177-b0b6-487a3f015000" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7b2e0824-e040-4b89-92f7-699eaddf6741" name="int Rating" direction="In" isUnique="false">
+                  <elementDefinition Id="c0420fe2-758f-4636-abef-0c47969467a3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="77b6c119-2916-455e-8894-d3d7b496289e" name="public Title" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cd8edce5-7c35-4ebf-a6b6-1af6b3f8940a" />
+          </operation>
+          <operation Id="ab358cb7-da80-4531-ae9d-844dc34debc9" name="public override string ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="26ea045b-88c4-4dd1-94f1-64d3d74d7d06" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="402d66ce-d894-4168-a47b-7f6bd54a9173" name="Movie" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ef03fad-09ba-4d38-9b8f-944a4e8a80b4" />
+        <generalsInternal>
+          <generalization Id="ed61acf4-f043-4d4c-8388-10af72832d46" isSubstitutable="false">
+            <classMoniker Id="579ea42b-c868-4fc3-9bbf-d50767cd8f0f" LastKnownName="Title" />
+            <elementDefinition Id="b4f5c3ff-003d-4f22-b847-d1a7960f4bad" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="5946e5d6-2cc2-49d2-ac3f-7041c082973b" name="private int Duration;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fee321d9-2920-4eee-a938-8135252e098b" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6d3cb00b-8da6-4960-ba79-c4520bf2c1b1" name="public void createNewMovieListing" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4d8f55e9-9357-4cff-8b96-127000cba06b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="816124a7-50d0-486d-961a-35ff4c55cd73" name="string n" direction="In" isUnique="false">
+                  <elementDefinition Id="0d995b6b-646a-4515-a626-336c448cce05" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9ca33a67-8c55-4d55-b0ad-99a6e4ad52b6" name="int r" direction="In" isUnique="false">
+                  <elementDefinition Id="49a5b4b0-28a7-46a2-b0cb-a2e11c53dc21" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7af831fa-1c21-4969-a9a1-3a9a731c99b9" name="int d" direction="In" isUnique="false">
+                  <elementDefinition Id="bc4c40f4-c790-4025-b364-f56f494f4c47" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e2ea6c0b-070a-47f5-aa9a-feee6312e130" name="public void Display" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a4948fa-77a8-45a7-ab31-d57d1788d9f9" />
+          </operation>
+          <operation Id="b6c5adb9-cc8b-4fd4-9c5b-fd6bc7744134" name="public override string ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="da83eb10-ff90-4de6-8409-073984c1b6b6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7910c840-c10f-48a6-8903-4c7d79774370" name="TVShow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3c3858e1-0fe1-4cc0-9d3d-02f2735f9174" />
+        <generalsInternal>
+          <generalization Id="dfbf8c23-fda7-499b-b7e2-d51277267a1d" isSubstitutable="false">
+            <classMoniker Id="579ea42b-c868-4fc3-9bbf-d50767cd8f0f" LastKnownName="Title" />
+            <elementDefinition Id="a6f06b93-6ef9-4679-abdd-2836b1b11202" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="88f75a1d-c229-4cbb-bd9e-5abaf15fa74f" name="private int NumberOfEpisodes;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0afe7061-8d06-4ebe-8c9d-49524a4b27a8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a54c2ac4-7145-4a68-89aa-56ba9f93a11e" name="public void CreateNewTVShowListing" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4a3b0029-ff82-4dd6-bc63-f78d329f534b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f10a56e4-6513-4237-9a65-b43a7d08fb3c" name="string n" direction="In" isUnique="false">
+                  <elementDefinition Id="fd5aa41d-2376-4a42-b273-823db08a6095" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6d09d22a-0e99-4e34-a271-c198bcb9b98f" name="int r" direction="In" isUnique="false">
+                  <elementDefinition Id="d7ec7f7f-2c1d-4f90-a3f2-b6766c92cd52" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fc76ae4a-91f6-4732-a1f4-bfc8e5d2fd96" name="int e" direction="In" isUnique="false">
+                  <elementDefinition Id="37702b09-c4ec-431f-ae3f-7c85e459ea7c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0e0a450c-5d86-47e8-bbd9-03220b62ec40" name="NetflixCatalogeModelingProject">
+    <elementDefinition Id="df17f8d4-c525-4f5d-9984-1137153bfb51" />
+  </package>
+</logicalClassDesignerModel>

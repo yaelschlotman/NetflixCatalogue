@@ -43,11 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Episode.cs" />
-    <Compile Include="GenreAction.cs" />
     <Compile Include="GenreAll.cs" />
-    <Compile Include="GenreComedy.cs" />
-    <Compile Include="GenreDrama.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

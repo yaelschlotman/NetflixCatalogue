@@ -6,12 +6,28 @@ using System.Threading.Tasks;
 
 namespace NetflixCatalogue
 {
-    /*class Movie : Title
+    public class Movie : Title
     {
-        private float duration; 
-        public Movie()
-         {
+        /* field
+            Overrides ToString() method to 
+            return a string of the name and duration 
+            of the movie.*/
+        
 
+        public int Duration;  
+        public Movie(string n, int r, int d)
+        {
+            Name = n;
+            Rating = r;
+            Duration = d;
         }
-    }*/
+      
+       
+
+        public override string ToString()
+        {
+            return Name + ", " + Duration + " minutes.";
+        }
+
+    }
 }
