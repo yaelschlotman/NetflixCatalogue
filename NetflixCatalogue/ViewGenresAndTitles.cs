@@ -8,7 +8,7 @@ namespace NetflixCatalogue
 {
     class ViewGenresAndTitles 
     {
-        List<string> Genres = new List<string> { "Comedy", "Drama", "Action"}; 
+        List<string> Genres; 
         public ViewGenresAndTitles()
         {
 

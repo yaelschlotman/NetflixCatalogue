@@ -1,42 +1,59 @@
 Netflix Catalog Concepts Qs & As: 
-"Public humiliation by disco dancing" prevention
+"Public Humiliation by Disco Dancing" Prevention
 
-*static/non-static
+static/non-static
 	Define static:  
-		May not be instantiated.  
-		Example:  Main method in Program should not be instantiated 
-				  anywhere; it's the entry point to running the program.
-	*Define non-static:   What is an example?
+			-May not be instantiated.  
+			-Example:  Main method in Program should not be instantiated anywhere; it's the entry point to running the program.
+	Define non-static:   What is an example?
+			-May be instantiated.
+			-Example:  Any class instantiaed in another class or in program main.
 *nullable types, null operators
 	What is a nullable type?  
-		Data type to which can be assigned a normal range of values, 
-		as well as null values.
+			-Data type to which can be assigned a normal range of values, as well as null values.
 	*Define the different null operators.
+
 *generics
 	*What are generics?  
-	H*ow would this be useful?
+	*How would this be useful?
 *attributes
 	*What is an atribute?
 	*What is an example of an attribute?
 *custom iterators
-	*Come up with an example where it makes sense to use a custom iterator.
+	*Come up with an example where it makes sense to use a custom iterator.		
+			-When you want to use the foreach method, you must use implement 
+			IEnumerable interface.
+			-replaces nee to manuyally create an enumerator.
+			-Lets the compiler automatically create the methods and properties 
+			of IEnumerator.
+			-much simpler syntax.
+
 	(Hint:  IEnumerable)
 *overriding
 	*Define overriding
-*overloading (operator, function)
-	*Define:  -adding two or more methods with the same name to a class.
-	         -enables defining many methods w/ same name, but different parameters.
-	         -when called, the program will use whichever is appropriate, depending on 
-	         -how arguments correspond to parameters.
-	*What is overloading an operator?
+overloading (operator, function)
+	Define:  
+			-adding two or more methods with the same name to a class.
+	        -enables defining many methods w/ same name, but different parameters.
+	        -when called, the program will use whichever is appropriate, depending on 
+	        -how arguments correspond to parameters.
+	What is overloading an operator?
+			-redefines built-in operators.
+			-enables operators w/ user-defined types.
+			-methods w/ special keyword "operator" followed by symbol foroperator being defined.
+			-like other methods, has return type and parameters.
 *access modifiers
 	*What is the difference between public, private, and protected?
-*properties, fields
-	*Properties:  named members of classes, structures or interfaces.
-				 extensions of fields and accessed using same syntax.
-				 use accessors through with values of a private field 
-				     can be read, written, or manipulated.
-				 do not name storage locations.
-				 have accessors that read, write, or compute their values.
-	Fields:  member variable in a class or structures.
-	Why would you use one over the other?  
+properties, fields
+	Properties:  
+			-named members of classes, structures or interfaces.
+			-extensions of fields and accessed using same syntax.
+			-use accessors through with values of a private field can be read, written, or manipulated.
+			-do not name storage locations.
+			-have accessors that read, write, or compute their values.
+	Fields:  
+			-member variable in a class or structures. Cannot
+			-Cannot be used in interfaces.
+	Why would you use one over the other? 
+			-Properties can be used in interfaces, so obviously you'd use that vs. field in an interface. 
+			-use fields only for variable that have private of protected accessibility.

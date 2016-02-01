@@ -72,31 +72,28 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="6d3cb00b-8da6-4960-ba79-c4520bf2c1b1" name="public void createNewMovieListing" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="4d8f55e9-9357-4cff-8b96-127000cba06b" />
+          <operation Id="b6c5adb9-cc8b-4fd4-9c5b-fd6bc7744134" name="public override string ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="da83eb10-ff90-4de6-8409-073984c1b6b6" />
+          </operation>
+          <operation Id="e0e1ac70-f543-4b1c-b767-2edf1a0678db" name="public Movie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="edcd8d76-133b-4255-90d4-92239585319c" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="816124a7-50d0-486d-961a-35ff4c55cd73" name="string n" direction="In" isUnique="false">
-                  <elementDefinition Id="0d995b6b-646a-4515-a626-336c448cce05" />
+                <parameter Id="0b5b3084-a246-4cd9-9a55-b4257901f110" name="string n" direction="In" isUnique="false">
+                  <elementDefinition Id="b5caaf36-4d1c-4bab-8ae1-a810f8e46d7c" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="9ca33a67-8c55-4d55-b0ad-99a6e4ad52b6" name="int r" direction="In" isUnique="false">
-                  <elementDefinition Id="49a5b4b0-28a7-46a2-b0cb-a2e11c53dc21" />
+                <parameter Id="b8e3209f-7a90-4a7a-b061-b06fdc6a76b5" name="int r" direction="In" isUnique="false">
+                  <elementDefinition Id="6fb13b71-b01a-4995-9201-6cf64b8f673a" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="7af831fa-1c21-4969-a9a1-3a9a731c99b9" name="int d" direction="In" isUnique="false">
-                  <elementDefinition Id="bc4c40f4-c790-4025-b364-f56f494f4c47" />
+                <parameter Id="a9b2aa5c-d873-4334-85cf-8381a79a8d63" name="int d" direction="In" isUnique="false">
+                  <elementDefinition Id="93a9bd4c-d738-4136-8ccd-d412c5911c42" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
-          </operation>
-          <operation Id="e2ea6c0b-070a-47f5-aa9a-feee6312e130" name="public void Display" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="2a4948fa-77a8-45a7-ab31-d57d1788d9f9" />
-          </operation>
-          <operation Id="b6c5adb9-cc8b-4fd4-9c5b-fd6bc7744134" name="public override string ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="da83eb10-ff90-4de6-8409-073984c1b6b6" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -111,27 +108,105 @@
           </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
-          <property Id="88f75a1d-c229-4cbb-bd9e-5abaf15fa74f" name="private int NumberOfEpisodes;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="88f75a1d-c229-4cbb-bd9e-5abaf15fa74f" name="public int? NumberOfEpisodes;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0afe7061-8d06-4ebe-8c9d-49524a4b27a8" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="a54c2ac4-7145-4a68-89aa-56ba9f93a11e" name="public void CreateNewTVShowListing" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="4a3b0029-ff82-4dd6-bc63-f78d329f534b" />
+          <operation Id="78349baa-5f35-4ed9-83ed-305199d06302" name="public TVShow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a0285cf-33ba-47ec-8e5f-27125d3e8a7d" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="f10a56e4-6513-4237-9a65-b43a7d08fb3c" name="string n" direction="In" isUnique="false">
-                  <elementDefinition Id="fd5aa41d-2376-4a42-b273-823db08a6095" />
+                <parameter Id="433cf975-58eb-4da8-b08f-7abbd63dfbb0" name="string n" direction="In" isUnique="false">
+                  <elementDefinition Id="d549b796-ff19-41c4-89f1-e49d2a3d8cd5" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="6d09d22a-0e99-4e34-a271-c198bcb9b98f" name="int r" direction="In" isUnique="false">
-                  <elementDefinition Id="d7ec7f7f-2c1d-4f90-a3f2-b6766c92cd52" />
+                <parameter Id="c6270806-35c7-4cc3-bad2-ad7c4ca438e2" name="int r" direction="In" isUnique="false">
+                  <elementDefinition Id="f11231a5-90cb-443c-bc7b-de573cbcf1de" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="fc76ae4a-91f6-4732-a1f4-bfc8e5d2fd96" name="int e" direction="In" isUnique="false">
-                  <elementDefinition Id="37702b09-c4ec-431f-ae3f-7c85e459ea7c" />
+                <parameter Id="2943771d-886e-4530-8e1a-880f006312d6" name="int? e" direction="In" isUnique="false">
+                  <elementDefinition Id="a0cafaaa-1986-4278-8a48-760678818501" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8128b162-fe22-417b-8fe6-b550c938a8cf" name="public override string ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fda53d04-a583-4ed4-8737-40e41abc9460" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c805bad7-dfcf-40da-88f2-3fe0612e3634" name="Genre" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c05b04d1-86c5-4a7b-8f7e-b74eff51f0b6" />
+        <targetEnds>
+          <association Id="1c47e645-bef3-4be6-af50-38c2d32f582f" isDerived="false" sourceEndRoleName="Genre" targetEndRoleName="Title" isLeaf="false" isAbstract="false">
+            <classMoniker Id="579ea42b-c868-4fc3-9bbf-d50767cd8f0f" LastKnownName="Title" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b26744f7-1cff-49e5-9364-7d72582cb7af" name="Genre" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7a4493e-9fb2-4d04-ba51-5d2d09befd0e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d05146bf-e2d1-4dbd-8ff3-104fb489cf1a" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="445f40fa-9a5c-45be-8a91-456b78cfb537" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="91557da2-4714-44c7-af68-8a123d7a7daa" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e300fe04-cea6-407e-80b3-521239627f6d" name="List&lt;Title&gt; TitleList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2fa70177-7b4b-44ac-8d7e-5f046c63407f" />
+            <defaultValue>
+              <literalString Id="a4bbcffc-1f5f-401b-89a0-5a723b6087d0" name="DefaultValue" value="new List&lt;Title&gt;();">
+                <elementDefinition Id="19f1e442-7da5-4696-b22f-14598f9232e4" />
+              </literalString>
+            </defaultValue>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="16ae039b-0d41-462d-a456-fae9701c59fe" name="public static Genre operator +" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e2f74b0e-7226-4fbb-a5d4-db48399d16ce" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e5dac214-b554-4020-bb96-b525eced029f" name="Genre GenreOne" direction="In" isUnique="false">
+                  <elementDefinition Id="6025bd2f-7b0d-4a9e-9917-cd74ded92b19" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cacd5aab-37dc-4785-a17d-8bf499a09af7" name="Genre GenreTwo" direction="In" isUnique="false">
+                  <elementDefinition Id="a14f76a1-0bd8-4517-878d-111141bc97a5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="81bc9d8a-707f-4e4c-a434-d197d2d6c377" name="public static Genre operator +" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dd5088d4-e948-42d6-a633-e57f96822254" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="31b33b66-2eb8-4910-9c4a-8f8a321775bb" name="Genre AggregatedGenre" direction="In" isUnique="false">
+                  <elementDefinition Id="a34ef92d-713b-4f6b-94c9-7d8921cfb5b6" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c893625c-e743-45bd-8b91-25d02558bafa" name="Title Name" direction="In" isUnique="false">
+                  <elementDefinition Id="df3280a8-addf-437c-a7ce-666899b8d1e5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7aa443fb-2f57-4c8f-8844-128cf6cdadd4" name="public Genre" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a2aae0ab-faeb-4a84-8feb-b81228e363d0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b4868731-2079-429b-90db-17f85c7b0ac2" name="List&lt;Title&gt; TitleList" direction="In" isUnique="false">
+                  <elementDefinition Id="5ba7c79a-e124-409c-9e29-09e19eb29ed6" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
